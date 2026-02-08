@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Werft | Dock Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="code-werftgross.png" alt="Logo" class="header-logo">
+            <div class="brand">
+                <h1>CODE-WERFT</h1>
+                <p>Webapp Entwicklung</p>
+            </div>
+        </div>
+        <nav class="top-nav">
+            <a href="#" id="nav-werft" class="active">WERFT</a>
+            <a href="#" id="nav-aura">AURA</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="section-werft" class="content-section active">
+            
+            <div class="welcome-panel">
+                <h2>Digitale Maßarbeit aus der Werft.</h2>
+                <p>
+                    Willkommen an Deck. Wir entwickeln hochperformante Web-Applikationen 
+                    und smarte IoT-Schnittstellen für das vernetzte Zuhause. <br>
+                    <strong>Präzises Handwerk – von der Kiellegung bis zum Stapellauf.</strong>
+                </p>
+                <div class="skills-tag-container">
+                    <span class="skill-tag">WEB-APPS</span>
+                    <span class="skill-tag">UI / UX DESIGN</span>
+                    <span class="skill-tag">SMART HOME</span>
+                </div>
+            </div>
+
+            <div class="dock-grid">
+                
+                <div class="dock-card active-project" onclick="switchTab('aura')">
+                    <div class="card-status status-live">● SYSTEM LIVE</div>
+                    <h3>Aura Wetterstation</h3>
+                    <p>Version V83.1 Pro</p>
+                    <div class="card-meta">Standort: Wohnzimmer</div>
+                </div>
+
+                <div class="dock-card construction-project">
+                    <div class="card-status status-build">● IM BAU</div>
+                    <h3>Smart Kombüse</h3>
+                    <p>Küchen-Management</p>
+                    <div class="card-meta">Rollout: Q3 2026</div>
+                </div>
+
+                <div class="dock-card maintenance-project">
+                    <div class="card-status status-wait">● WARTUNG</div>
+                    <h3>Werft Core</h3>
+                    <p>Server & Infrastruktur</p>
+                    <div class="card-meta">Uptime: 99.9%</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="section-aura" class="content-section" style="display: none;">
+            <h2>Projekt: Aura Wetterstation</h2>
+
+            <div class="project-container">
+                <div class="project-title-block">
+                    <img src="wohnzimmerstandart.jpg" alt="Aura Pro Ansicht" class="project-hero-img">
+                    <div class="caption-text">
+                        Anwendungsbeispiel: Wandmontage im Wohnzimmer
+                    </div>
+                    <div class="project-title">
+                        AURA Wetterstation Pro
+                    </div>
+                </div>
+                
+                <a href="https://aura.code-werft.de" target="_blank" class="btn-start">
+                    ▶ HIER KLICKEN ZUM STARTEN
+                </a>
+
+                <div class="status-text">
+                    Live-System • Dark Mode • Pro-Edition
+                </div>
+            </div>
+        </section>
+
+        <p class="description-footer">
+            System Status: All Systems Operational.<br>
+            Code-Werft Internal Network.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
